@@ -37,18 +37,14 @@
             this.tab1 = this.Factory.CreateRibbonTab();
             this.分析 = this.Factory.CreateRibbonGroup();
             this.button1 = this.Factory.CreateRibbonButton();
-            this.GroupKhxx = this.Factory.CreateRibbonGroup();
-            this.btnkhxx = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.分析.SuspendLayout();
-            this.GroupKhxx.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab1
             // 
             this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
             this.tab1.Groups.Add(this.分析);
-            this.tab1.Groups.Add(this.GroupKhxx);
             this.tab1.Label = "TabAddIns";
             this.tab1.Name = "tab1";
             // 
@@ -64,18 +60,6 @@
             this.button1.Name = "button1";
             this.button1.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button1_Click);
             // 
-            // GroupKhxx
-            // 
-            this.GroupKhxx.Items.Add(this.btnkhxx);
-            this.GroupKhxx.Label = "客户信息";
-            this.GroupKhxx.Name = "GroupKhxx";
-            // 
-            // btnkhxx
-            // 
-            this.btnkhxx.Label = "获取信息";
-            this.btnkhxx.Name = "btnkhxx";
-            this.btnkhxx.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnkhxx_Click);
-            // 
             // Ribbon1
             // 
             this.Name = "Ribbon1";
@@ -86,8 +70,6 @@
             this.tab1.PerformLayout();
             this.分析.ResumeLayout(false);
             this.分析.PerformLayout();
-            this.GroupKhxx.ResumeLayout(false);
-            this.GroupKhxx.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -97,8 +79,6 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup 分析;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonGroup GroupKhxx;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnkhxx;
     }
 
     partial class ThisRibbonCollection

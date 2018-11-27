@@ -204,11 +204,9 @@
     <Compile Include="ConvertExtend.cs" />
     <Compile Include="DapperHelper.cs" />
     <Compile Include="ExcelHelper.cs" />
-    <Compile Include="Models\客户信息\Khxx.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Services\客户信息\KhxxServices.cs" />
     <Compile Include="创建与导入.cs">
       <SubType>UserControl</SubType>
     </Compile>
